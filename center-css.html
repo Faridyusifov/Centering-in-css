@@ -1,0 +1,130 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Centering in CSS: A Complete Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link href="center-css.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="cc-name">
+        <h1>Centering in CSS: A Complete Guide</h1>
+    </div>
+    <section>
+    <div class="cc-horizontally">
+    <h2>Horizontally</h2>
+    <h3>Inline or Inline-* elements</h3>
+    <pre class="code"><span class="clr-green">.centering-element</span>{
+    <span class="clr-blue">text-align</span>:<span class="clr-dakorchid">center</span>;
+ }</pre>
+    
+    <div class="ta-center">
+       <a href="#">One</a>
+       <a href="#">Two</a>
+       <a href="#">Three</a>
+       <a href="#">Four</a>
+    </div>
+    <h3>Block level element</h3> 
+    <pre class="code"><span class="clr-green">.centering-element</span>{
+     <span class="clr-blue">margin</span>:<span class="clr-dakorchid"> 0 auto</span>;
+ }</pre>
+
+     <main class="block-center">
+         <div class="blc-center">
+             <p>I'm a block level element and I am centered.</p>
+         </div>
+     </main>
+     <h3>More than one block element</h3>
+     <pre class="code"><span class="clr-green">.inline-block-center</span>{
+    <span class="clr-blue">text-align</span>:<span class="clr-dakorchid">center</span>;
+}</pre>
+    
+    <main class="inline-block-center">
+     <div>
+        I'm an element that is block-like with my siblings and we're centered in a row.
+    </div>
+    <div>
+        I'm an element that is block-like with my siblings and we're centered in a row. I have more content in me than my siblings do.
+    </div>
+    <div>
+        I'm an element that is block-like with my siblings and we're centered in a row.
+    </div>
+    </main>
+    <pre class="code height"><span class="clr-green">.flex-center</span>{
+    <span class="clr-blue">display</span>:<span class="clr-dakorchid">flex</span>;
+    <span class="clr-blue">justify-content</span>:<span class="clr-dakorchid">center</span>;
+}</pre>
+    <main class="flex-center">
+    <div>
+        I'm an element that is block-like with my siblings and we're centered in a row.
+    </div>
+    <div>
+        I'm an element that is block-like with my siblings and we're centered in a row. I have more content in me than my siblings do.
+    </div>
+    <div>
+        I'm an element that is block-like with my siblings and we're centered in a row.
+    </div>
+    </main>
+    </div>
+    </section>
+
+    <section>
+        <div class="cc-vertically">
+            <h2>Vertically</h2>
+            <h3>Inline or Inline-* elements</h3>
+    <pre class="code height"><span class="clr-green">.flex-center-vertically</span>{
+    <span class="clr-blue">display</span>:<span class="clr-dakorchid">flex</span>;
+    <span class="clr-blue">justify-content</span>:<span class="clr-dakorchid">center</span>;
+    <span class="clr-blue">flex-direction</span>:<span class="clr-dakorchid">column</span>;
+}</pre>
+         <main>
+            <div class="flex-center-vertically">
+                <p>I'm vertically centered multiple lines of text in a flexbox container.</p>
+            </div>
+         </main>   
+<pre class="code height"><span class="clr-green">.p-relative-center</span>{
+    <span class="clr-blue">position</span>:<span class="clr-dakorchid">relative</span>;
+}
+
+<span class="clr-green">..p-relative-center::before</span>{
+    <span class="clr-blue">content</span>:<span class="clr-dakorchid">" "</span>;
+    <span class="clr-blue">display</span>:<span class="clr-dakorchid">inline-block</span>;
+    <span class="clr-blue">height</span>:<span class="clr-dakorchid">100%</span>;
+    <span class="clr-blue">width</span>:<span class="clr-dakorchid">1%</span>;
+    <span class="clr-blue">vertical-align</span>:<span class="clr-dakorchid">middle</span>;
+}
+
+<span class="clr-green">.p-relative-center</span>{
+    <span class="clr-blue">display</span>:<span class="clr-dakorchid">inline-block</span>;
+    <span class="clr-blue">vertical-align</span>:<span class="clr-dakorchid">middle</span>;
+}</pre>
+ 
+        <main>
+            <div class="p-relative-center">
+                <p>I'm vertically centered multiple lines of text in a container. Centered with a ghost pseudo element</p>
+            </div>
+        </main>
+            <h3>Block level element</h3>
+<pre class="code height"><span class="clr-green">.block-parent</span>{
+    <span class="clr-blue">position</span>:<span class="clr-dakorchid">relative</span>;
+}
+
+<span class="clr-green">.block-child</span>{
+    <span class="clr-blue">position</span>:<span class="clr-dakorchid">absolute</span>;
+    <span class="clr-blue">top</span>:<span class="clr-dakorchid">50%</span>;
+    <span class="clr-blue">height</span>:<span class="clr-dakorchid">100px</span>;
+    <span class="clr-blue">margin-top</span>:<span class="clr-dakorchid">-50%</span>;
+}</pre>
+          <main class="block-center-vertically">
+              <div class="bcv-div">
+                I'm a block-level element with a fixed height, centered vertically within my parent.
+              </div>
+          </main>
+        </div>
+        
+    </section>
+</body>
+</html>
